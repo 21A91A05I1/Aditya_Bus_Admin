@@ -1,12 +1,14 @@
 import React from 'react'
-import logo from './assets/aditya-logo.png'
+import Login from './pages/Login'
+import Operator from './pages/Operator'
+import Student from './pages/Student'
+
 
 const App = () => {
   return (
-    <div className='h-screen w-full flex items-center justify-center flex-col gap-y-3'>
-      <img src={logo} alt='Aditya logo' className='h-[150px] object-cover' />
-      <h1 className='font-bold text-2xl'>Welcome to Aditya Bus Admin Portal.</h1>
-    </div>
+    // <Login />
+    <Operator /> 
+    // <Student />
   )
 }
 
