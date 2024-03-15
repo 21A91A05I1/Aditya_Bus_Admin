@@ -6,8 +6,8 @@ import Student from './pages/Student'
 
 const App = () => {
   return (
-    // <Login />
-    <Operator /> 
+    <Login />
+    // <Operator /> 
     // <Student />
   )
 }

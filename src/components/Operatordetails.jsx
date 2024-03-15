@@ -47,7 +47,7 @@ const Operatordetails = () => {
  
   return (
     <div className='h-full w-full flex items-center justify-center '>
-      <div className='min-h-[85%] w-[30%] p-6 rounded-xl shadow-md'>
+      <div className='md:min-h-[85%] md:w-[30%] p-6 rounded-xl shadow-md w-[70%]'>
         <h1 className='text-2xl font-medium text-center mb-4'>Add Operator</h1>
         <form onSubmit={handleSubmit}>
             <div className='mb-3'>

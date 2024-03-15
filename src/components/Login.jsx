@@ -3,7 +3,7 @@ import React from 'react'
 const LoginPage = () => {
   return (
    <div className='h-full w-full flex items-center justify-center flex-col  bg-slate-100 relative overflow-hidden'>
-     <div className='h-[65%] w-[22%]   bg-white p-8 rounded-xl shadow-lg'>
+     <div className='md:h-[65%] md:w-[22%]   bg-white p-8 rounded-xl shadow-lg'>
         <h2 className="text-2xl mb-4 text-center">Login</h2>
         <form>
     <div className="mb-4">
@@ -39,7 +39,7 @@ const LoginPage = () => {
 
 
     </div>
-<div className='h-[55%] w-[30%] bg-[#004466] rounded-[45px] absolute -top-12 -right-48 rotate-45'></div>
+<div className='h-[55%] w-[30%] bg-[#004466] rounded-[45px] absolute -top-12 -right-48 rotate-45 '></div>
 <div className='h-[55%] w-[30%] bg-[#004466] rounded-[45px] absolute -bottom-12 -left-48 rotate-45'></div> 
 
     
