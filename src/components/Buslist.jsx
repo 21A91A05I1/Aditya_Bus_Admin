@@ -54,19 +54,19 @@ const Buslist = () => {
   return (
     <div className='flex justify-center items-center h-full w-full'>
        <div className='flex justify-center items-center flex-col h-full w-full'>
-      <div className='flex justify-around mb-[20px]   h-[20%] w-[80%] items-center'>
-        <select onChange={handleGroundChange} className='border border-black  w-[20%] h-[40%] font-medium text-lg p-3 rounded-md '>
+      <div className='md:flex  justify-around mb-[20px]   h-[20%] w-[80%] items-center '>
+        <select onChange={handleGroundChange} className='border border-black w-full  md:w-[20%] md:h-[40%] font-medium text-lg p-3 rounded-md '>
           <option value="">Select Ground</option>
           {grounds.map((ground, index) => (
             <option key={index} value={ground} >{ground}</option>
           ))}
         </select>
-        <div className='h-full w-[60%] flex items-center justify-center'>
-        <input className='border rounded-md px-4 py-2 outline-none w-[40%] h-[40%] border-black mr-7' type="text" placeholder="Search Bus Number"  value={searchTerm} onChange={handleSearchChange} />
+        <div className='md:h-full h-[60%] md:w-[60%] w-full flex items-center justify-center '>
+        <input className='border rounded-md px-4 py-2 outline-none md:w-[40%] w-full md:h-[40%] border-black mr-7' type="text" placeholder="Search Bus Number"  value={searchTerm} onChange={handleSearchChange} />
         <button className="bg-[#004466] text-white rounded-xl px-4 py-2 w-[90px] h-[35px] border-none outline-none">Search</button>
         </div>
       </div>
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px' }} className='h-[70%] w-[80%]  flex items-center justify-center'>
+      <div style={{ display: 'grid',  gap: '20px' }} className='h-[70%] w-[80%]  flex items-center justify-center md:grid-cols-4 grid-cols-2 gap-4'>
         {[...Array(12)].map((_, index) => (
           <Card key={index} busNumber={`Bus ${index + 1}`} onClick={() => handleCardClick(`Bus ${index + 1}`)} />
         ))}
